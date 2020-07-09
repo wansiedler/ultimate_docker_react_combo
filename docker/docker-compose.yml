@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+
+  react_project:
+    build:
+#      context: ./../projects/react_project1
+      context: ./../projects/react-redux-reactRouter
+      dockerfile: Dockerfile
+    volumes:
+#      - &react_project_folder ./../projects/react_project1:/var/www/react_project
+      - &react_project_folder ./../projects/react-redux-reactRouter:/var/www/react_project
+      - ./log/react_project:/root/.npm/_logs
+      - react_project_node_modules:/var/www/react_project/node_modules
+    ports:
+      - "10000:8080"
+    expose:
+      - 8080
+    environment:
+      - PORT=8080
+      - HOST=0.0.0.0
+    stdin_open: true
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 4G
+volumes:
+  react_project_node_modules:
