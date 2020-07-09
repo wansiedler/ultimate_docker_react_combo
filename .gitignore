@@ -1,9 +1,12 @@
 .idea/
 .netbeans/
 .eclipse/
+# projects/*
 projects/react_project1/*
+!.keep
 Dockerfile2
 log/*
+!.gitignore
 
 #.env
 Thumbs.db
