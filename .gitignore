@@ -1,7 +1,7 @@
 .idea/
 .netbeans/
 .eclipse/
-/projects/react_project1/*
+projects/react_project1/*
 Dockerfile2
 log/*
 
