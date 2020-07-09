@@ -2,7 +2,6 @@
 .netbeans/
 .eclipse/
 /projects/react_project1/*
-/projects/*/*
 Dockerfile2
 log/*
 
