@@ -1,0 +1,12 @@
+.Card {
+    text-align: center;
+    width: 200px;
+    padding: 0 20px;
+    /*margin: 10px;*/
+    /*flex-direction: row;*/
+}
+
+#orderform {
+    /*flex-direction: row;*/
+    /*display: flex;*/
+}
